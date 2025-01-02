@@ -6,6 +6,10 @@
   "author": "Daniel Neto",
   "license": "CC0-1.0",
   "type": "module",
+  "main": "bin/setup.js",
+  "bin": {
+    "setup-commit-tools": "./bin/setup.js"
+  },
   "files": [
     "bin",
     "src",
@@ -19,6 +23,7 @@
     "test:e2e": "NODE_OPTIONS=--experimental-vm-modules jest --config ./test/jest-e2e.config.js --forceExit",
     "format": "prettier --write src",
     "format:check": "prettier --check src",
+    "prepublishOnly": "npm run test && npm run format:check",
     "prepare": "husky"
   },
   "repository": {
