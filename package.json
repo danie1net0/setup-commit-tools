@@ -1,8 +1,17 @@
 {
   "name": "setup-commit-tools",
   "version": "1.0.0",
-  "description": "Install and configure Husky, Commitlint e Commitzen in any project.",
-  "main": "setup.js",
+  "description": "Tool to setup commit conventions and formatting.",
+  "homepage": "https://github.com/danie1net0/setup-commit-tools#readme",
+  "author": "Daniel Neto",
+  "license": "CC0-1.0",
+  "type": "module",
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
@@ -13,22 +22,20 @@
     "url": "git+https://github.com/danie1net0/setup-commit-tools.git"
   },
   "keywords": [
-    "npm",
     "git",
+    "git-hooks",
     "commit",
     "commitlint",
     "commitzen",
     "husky",
-    "lint"
+    "lint",
+    "prettier"
   ],
-  "author": "Daniel Neto",
-  "license": "CC0-1.0",
   "bugs": {
     "url": "https://github.com/danie1net0/setup-commit-tools/issues"
   },
-  "homepage": "https://github.com/danie1net0/setup-commit-tools#readme",
   "devDependencies": {
-    "@types/jest": "^29.5.14",
+    "@jest/globals": "^29.7.0",
     "jest": "^29.7.0"
   }
 }
