@@ -1,4 +1,5 @@
-module.exports = {
+export default {
+  transform: {},
   testEnvironment: 'node',
   collectCoverage: true,
   coverageDirectory: 'coverage',
@@ -11,7 +12,12 @@ module.exports = {
       statements: 80
     }
   },
-  testMatch: ['**/__tests__/**/*.test.js'],
+  testMatch: [
+    "./**/*.spec.js"
+  ],
+  moduleNameMapper: {
+    '^(\\.{1,2}/.*)\\.js$': '$1',
+  },
   moduleFileExtensions: ['js', 'json'],
   verbose: true
 };
